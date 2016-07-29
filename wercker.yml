@@ -26,4 +26,4 @@ build:
     # and the code value contains the command that get executed
     - script:
         name: pylint
-        code: pylint aba
+        code: pylint aba/simplecaesar.py
