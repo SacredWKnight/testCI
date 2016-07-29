@@ -6,13 +6,15 @@ build:
 
   # The steps that will be executed on build
   steps:
-    - virtualenv:
-        name: setup virtual environment
 
     - pip-install:
         requirements_file: ""
-        packages_list: "pylint"
+        packages_list: "pylint virtualenv"
 
+    
+    - virtualenv:
+        name: setup virtual environment
+        
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
