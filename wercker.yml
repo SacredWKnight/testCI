@@ -26,4 +26,4 @@ build:
     # and the code value contains the command that get executed
     - script:
         name: pylint
-        code: pylint aba/simplecaeser.py
+        code: pylint --const-rgx='[a-z_][a-z0-9_]{2,30}$' aba/simplecaeser.py
